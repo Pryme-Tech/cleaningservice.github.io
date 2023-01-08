@@ -1,18 +1,23 @@
+const preloader = document.getElementById('preloader')
+const content = document.getElementById('content')
 
+setTimeout(() => {
+  preloader.classList.add("d-none")
+  content.classList.remove("d-none")
+}, 3000);
 
 window.addEventListener('load',()=>{
 
-const preloader = document.getElementById('preloader')
-const content = document.getElementById('content')
+
 const clients = document.getElementById('clients')
 const team = document.getElementById('team')
 const projects = document.getElementById('projects')
 const welcome = document.querySelector('.welcome')
 
-  setTimeout(() => {
-    preloader.classList.add("d-none")
-    content.classList.remove("d-none")
-}, 1500);
+//   setTimeout(() => {
+//     preloader.classList.add("d-none")
+//     content.classList.remove("d-none")
+// }, 1500);
 
 window.addEventListener('scroll',()=>{
 
