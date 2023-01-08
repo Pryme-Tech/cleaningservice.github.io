@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: relative;
+}
+
+.welcome{
+    transition: all 2s;
+    background-color: #000e39;
+}
+
+.border-right-dashed{
+    border-right: 2px dashed;
+}
+
+.content{
+    transition: all 2s;
+}
+
+.welcome a{
+    color : #8ec1f7 !important;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.welcome span{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.welcome svg{
+    color: #007cfb;
+    cursor: pointer;
+}
+
+.welcome svg:hover{
+    color: #ffffff;
+}
+
+.navLinks a{
+    color:#000e39;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 70px;
+    transition: all 2s;
+    /* border-radius: 1em; */
+}
+
+.navLinks a:hover{
+    border-bottom: 3px solid blue;
+}
+
+nav .btn{
+    background-color: #000e39 !important;
+}
+
+#navbar-toggler-icon{
+    display: none;
+}
+
+.m-navLinks{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 260px;
+    height: 100vh;
+    transition: all 2s;
+    z-index: 99;
+}
+
+.m-navLinks .links a{
+    /* width: 100%; */
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    text-align: left;
+    padding: 4%;
+    margin: 4%;
+    box-sizing: border-box;
+}
+
+.carousel-inner .active img#first{
+    position: absolute;
+    bottom: -20%;
+    animation: mymove1 7s infinite;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+#container .card{
+    height: 100%;
+}
+
+/* #container:hover + .icons-nav{
+    display: block !important;
+} */
+
+#container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+@keyframes mymove1 {
+    from { width: 100%;}
+    to { width: 105%;}
+  }
+
+  .carousel-inner .active img#second{
+    position: absolute;
+    bottom: -15%;
+    animation: mymove2 7s infinite;
+    width: 105%;
+}
+
+@keyframes mymove2 {
+    from { width: 105%;}
+    to { width: 100%;}
+  }
+
+  .records .card{
+    background-color: #082680;
+  }
+
+  .records .card h4{
+    color: #8ec1f7 !important;
+  }
+
+  .records .card h4 small{
+    color: #ffffff !important;
+  }
+
+  .team .card-img-top {
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+}
+
+@media(max-width: 1026px){
+    .navLinks,nav .btn{
+        display: none;
+    }
+    #navbar-toggler-icon{
+        display: block;
+    }
+}
+
+@media(max-width: 900px){
+    .carousel-inner .active img#first,.carousel-inner .active img#second{
+        bottom: 0%;
+        left: -10%;
+    }
+}
+
+@media(max-width:800px){
+    .welcome{
+        display: none;
+    }
+
+}
+
+@media(max-width:770px){
+
+.team .card-img-top {
+    width: 100%;
+    height: 100vw;
+    object-fit: cover;
+}
+}
+
+
+@media(max-width:750px){
+    #carousel1 img{
+        height: 100%;
+        width: auto !important;
+    }
+
+    @keyframes mymove1 {
+        from { height: 100%;}
+        to { height: 105%;}
+      }
+    @keyframes mymove2 {
+        from { height: 105%;}
+        to { height: 100%;}
+      }
+}
+
+@media(max-width:400px){
+    .carousel-caption{
+        right: 5% !important;
+        left: 5% !important;
+    }
+}
+
+.contact-cards{
+    border-right: 1px dashed;
+    color: #1684fb !important;
+}
+
+.contact-cards i{
+    transition: all 240ms linear 0ms;
+}
+
+.contact-cards i:hover{
+    font-size: .5em !important;
+}
+
+.card h4{
+    font-weight: bold;
+    color: #082680 !important;
+    font-size: 1.2em;
+}
+
+.nav{
+    position: absolute !important;
+    width: 100%;
+}
+
+/* .navbar-nav{
+    width: max-content !important;
+} */
+
+.nav-item{
+    /* margin: 0 10% 0 10% !important; */
+}
+
+.nav-item a{
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
