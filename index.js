@@ -66,8 +66,6 @@ function counter(element){
 
   observer.observe(element);
 
-  // console.log(element)
-
 }
 
 counter(clients);
